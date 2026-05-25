@@ -323,3 +323,92 @@ button:focus {
   font-family: sans-serif;
   font-weight: 300;
 }
+
+@media (max-width: 600px) {
+  body {
+    font-size: 1rem;
+  }
+
+  .cabecera {
+    padding: 0.5rem 1rem;
+    align-items: center;
+  }
+
+  .cabecera-num {
+    font-size: 2rem;
+  }
+
+  .contador-item {
+    margin-right: 1rem;
+  }
+
+  .mesa {
+    max-width: 100%;
+    padding: 1rem;
+    justify-content: center;
+  }
+
+  .tarjeta {
+    width: 4.2rem;
+    height: 4.2rem;
+    margin: 0.3rem;
+  }
+
+  .tarjeta__contenido {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .bienvenida h1 {
+    font-size: 3rem;
+    line-height: 1.1;
+    padding: 0 1rem;
+  }
+
+  .bienvenida-botones {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .bienvenida button {
+    min-width: auto;
+    width: 85%;
+    margin: 0;
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+
+}
+
+.selector-idioma {
+  margin-bottom: 2rem;
+}
+
+.lang-selector {
+  padding: 0.7rem 1.2rem;
+  border-radius: 10px;
+  border: none;
+  background: var(--gradient);
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.volver-inicio {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  margin-right: 3rem;
+  background: transparent;
+  border: 2px solid var(--hotpink);
+  color: var(--hotpink);
+}
+
+.volver-inicio:hover {
+  background: var(--hotpink);
+  color: white;
+}

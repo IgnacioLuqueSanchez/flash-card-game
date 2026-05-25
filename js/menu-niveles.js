@@ -3,12 +3,14 @@ function escribeNiveles() {
   niveles.forEach(function(elemento, indice) {
     var controlNivel = document.createElement("li");
     controlNivel.innerHTML =
-      "<button class='nivel' data-nivel=" +
-      indice +
-      ">Nivel " +
-      (indice + 1) +
-      "</button>";
-    menuNiveles.appendChild(controlNivel);
+      "<button class='nivel' data-nivel='" +
+    indice +
+    "'>" +
+    translations[currentLang].level +
+    " " +
+    (indice + 1) +
+    "</button>";
+        menuNiveles.appendChild(controlNivel);
   });
 }
 

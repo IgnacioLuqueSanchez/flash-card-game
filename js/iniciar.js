@@ -38,3 +38,13 @@ function iniciaJuegoRelax() {
   document.querySelector("#bienvenida").classList.remove("visible");
   iniciar();
 }
+
+function volverInicio() {
+  clearInterval(cronometro);
+
+  document.querySelector("#bienvenida").classList.add("visible");
+
+  document.querySelector("#cronometro").classList.remove("cronometro-oculto");
+
+  document.querySelector(".control-nivel").classList.remove("control-oculto");
+}
